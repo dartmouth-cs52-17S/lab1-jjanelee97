@@ -1,0 +1,133 @@
+@media only screen and (max-width: 640px) {
+  flex-direction: column;
+
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.header-text  {
+  text-align: center;
+  font-size: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  width: 1400px;
+  padding: 25px;
+  margin: 100px auto;
+}
+.header-text p {
+  text-align: center;
+  margin: 5px;
+  font-size: 30px;
+}
+
+ul  {
+  list-style: none;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  width: 300px;
+  padding: 25px;
+  margin: auto;
+  margin-top: 55px;
+  margin-bottom: 350px;
+}
+input {
+  padding: 15px;
+  border-radius: 6px;
+}
+
+button {
+  border: 0;
+  background: #6dba4d;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 10px;
+  outline: 0;
+  padding: 1px 3px;
+  transition: all .1s linear;
+}
+button:active {
+  box-shadow: 0 1px 0 #006599;
+  transform: translateY(3px);
+}
+button:hover  {
+  background: #5b9d40;
+}
+
+.cover  {
+  background-image: url("img/kaf_background.jpg");
+  background-size: cover;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin-right: 45px;
+}
+nav li a:last-child  {
+  width: 300px;
+  height: 100px;
+  border: 3px;
+  border-color: black;
+}
+nav ul li a:link, a:visited {
+  color: #ffffff;
+  padding: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+
+    background-color: #979998;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+footer  {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer ul li {
+  font-size: 18px;
+  margin-right: 20px;
+}
