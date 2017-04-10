@@ -1,3 +1,8 @@
+div.cover  {
+  background-image: url("img/kaf_background.jpg");
+  background-size: cover;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
@@ -8,9 +13,54 @@ body {
 a {
   text-decoration: none;
 }
+
 ul  {
   list-style: none;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+nav a {
+  font-size: 50px;
+  padding-left: 25px;
+  color: rgb(136, 231, 140);
+}
+
+nav ul li {
+  margin-right: 45px;
+}
+
+nav ul li:hover {
+  color: rgb(183, 231, 185);
+  cursor: pointer;
+}
+
+nav ul li:last-child {
+  border-style: solid;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-width: 3px;
+  border-radius: 4px;
+}
+
+div.nav-collapse {
+  display: none;
+}
+
 div.header-text  {
   text-align: center;
   font-size: 50px;
@@ -21,13 +71,44 @@ div.header-text  {
   margin: 60px auto;
   margin-bottom: 10px;
 }
+
 div.header-text h1  {
   font-size: 70px;
 }
+
 div.header-text p {
   text-align: center;
   margin: 5px;
   font-size: 25px;
+}
+
+input {
+  font: inherit;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+button {
+  border: 0;
+  border-radius: 4px;
+  background: rgb(109, 186, 77);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font: inherit;
+  margin: 10px;
+  outline: 0;
+  padding: 1px 3px;
+  transition: all .1s linear;
+}
+
+button:active {
+  box-shadow: 0 1px 0 rgb(0, 101, 153);
+  transform: translateY(3px);
+}
+
+button:hover  {
+  background: rgb(91, 157, 64);
+  cursor: pointer;
 }
 
 div.input-container {
@@ -43,89 +124,6 @@ div.input-container {
   margin-bottom: 210px;
 }
 
-input {
-  padding: 15px;
-  border-radius: 6px;
-}
-
-button {
-  border: 0;
-  background: rgb(109, 186, 77);
-  border-radius: 4px;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  font: inherit;
-  margin: 10px;
-  outline: 0;
-  padding: 1px 3px;
-  transition: all .1s linear;
-}
-button:active {
-  box-shadow: 0 1px 0 rgb(0, 101, 153);
-  transform: translateY(3px);
-}
-button:hover  {
-  background: rgb(91, 157, 64);
-  cursor: pointer;
-
-}
-
-div.cover  {
-  background-image: url("img/kaf_background.jpg");
-  background-size: cover;
-
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100%
-  padding: 25px;
-}
-
-
-nav ul {
-  display: flex;
-  padding: 10px;
-
-  justify-content: space-between;
-}
-
-nav ul li {
-  margin-right: 45px;
-}
-
-nav ul li:hover {
-  color: rgb(183, 231, 185);
-  cursor: pointer;
-}
-nav ul li:last-child {
-  border-style: solid;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-width: 3px;
-  border-radius: 4px;
-}
-
-nav ul li a:link, nav ul li a:visited {
-  color: #ffffff;
-  text-align: center;
-  display: inline-block;
-}
-
-nav ul li:hover {
-    color: rgb(47, 156, 100);
-    cursor: pointer;
-
-}
-
-div.nav-collapse {
-  display: none;
-}
-
 div.links-container {
   display: flex;
   flex-direction: row;
@@ -135,17 +133,16 @@ div.links-container {
 }
 
 div.links-container ul li:first-child {
-  color: rgb(85, 198, 110)
+  color: rgb(85, 198, 110);
 }
 
 div.links-container ul li:not(:first-child):hover {
-  color: rgb(40, 196, 252);
+  color: rgb(184, 230, 189);
   cursor: pointer;
 }
 
 div.links-collapse  {
   display: none;
-  width: 100%;
 }
 
 footer  {
@@ -156,17 +153,21 @@ footer  {
   background-color: rgb(0, 0, 0);
 }
 
-footer > a  {
+footer a  {
+  color: rgb(136, 231, 140);
   padding-left: 30px;
 }
+
 footer ul {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 footer ul li {
   font-size: 18px;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -176,47 +177,37 @@ footer ul li {
 }
 
 @media only screen and (max-width: 920px) {
-  h1  {
-    font-size: 45px;
-  }
   div.header-text {
     width: 300px;
   }
-  div.header-text p {
-    font-size: 25px;
+
+  div.header-text h1 {
+    font-size: 35px;
   }
+
+  div.header-text p {
+    font-size: 15px;
+  }
+
   nav {
     display: none;
   }
-  div.links-container {
-    display: none;
-  }
-
 
   div.nav-collapse {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     background-color: rgba(0, 0, 0, 0.6);
-    width: 100%
-    padding: 25px;
-
   }
 
-  div.nav-collapse ul {
-    display: flex;
-    justify-content: space-between;
-  }
-  div.nav-collapse > a  {
-    padding-left: 50px;
+  div.nav-collapse a {
+    color: rgb(136, 231, 140);
+    font-size: 30px;
+    padding-left: 20px;
   }
 
   div.nav-collapse ul li {
     margin-right: 45px;
-  }
-
-  div.nav-collapse ul li:last-child {
     border-style: solid;
     padding-left: 5px;
     padding-right: 5px;
@@ -224,36 +215,41 @@ footer ul li {
     border-radius: 4px;
   }
 
+  div.nav-collapse ul li:hover {
+    color: rgb(47, 156, 100);
+    cursor: pointer;
+  }
+
+  div.links-container {
+    display: none;
+  }
+
   div.links-collapse  {
     display: flex;
     align-items: center;
-    margin-bottom: 0px;
     width: 100%;
   }
 
   div.links-collapse ul {
-    margin: 0;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0;
+    padding: 0px;
     width: 100%;
   }
 
   div.links-collapse ul li {
-
     display: flex;
     justify-content: space-between;
     border-bottom: solid rgb(99, 182, 88);
     background-color: rgba(0, 0, 0, 0.6);
     padding: 25px;
     text-align: center;
-
-
   }
+
   div.links-collapse ul li:hover  {
     color: rgb(32, 87, 138);
     cursor: pointer;
-
   }
 }
