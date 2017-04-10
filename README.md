@@ -1,7 +1,7 @@
 # README.md
 Jane Lee
 
-CS 52 Web-Dev with time
+CS 52 Web-Dev with Tim Tregubov
 
 ## Description
 I made this site in relation to the DALI project I'm working on: Line@KAF, and I used all the elements from the http://cs52.me/assignments/lab/landing-page/ assignment using pure HTML/CSS.  
