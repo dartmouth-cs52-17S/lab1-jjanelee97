@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -13,29 +14,33 @@ ul  {
 div.header-text  {
   text-align: center;
   font-size: 50px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   width: 1400px;
   padding: 25px;
   margin: 100px auto;
+  margin-bottom: 10px;
+}
+div.header-text h1  {
+  font-size: 80px;
 }
 div.header-text p {
   text-align: center;
   margin: 5px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 div.input-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   width: 300px;
   padding: 25px;
   margin: auto;
-  margin-top: 55px;
-  margin-bottom: 350px;
+  margin-top: 25px;
+  margin-bottom: 210px;
 }
 
 input {
@@ -45,9 +50,9 @@ input {
 
 button {
   border: 0;
-  background: #6dba4d;
+  background: rgb(109, 186, 77);
   border-radius: 4px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   font: inherit;
   margin: 10px;
@@ -56,11 +61,13 @@ button {
   transition: all .1s linear;
 }
 button:active {
-  box-shadow: 0 1px 0 #006599;
+  box-shadow: 0 1px 0 rgb(0, 101, 153);
   transform: translateY(3px);
 }
 button:hover  {
-  background: #5b9d40;
+  background: rgb(91, 157, 64);
+  cursor: pointer;
+
 }
 
 div.cover  {
@@ -79,10 +86,7 @@ nav {
   padding: 25px;
 }
 
-nav > a  {
 
-  padding-left: 50px;
-}
 nav ul {
   display: flex;
   padding: 10px;
@@ -92,7 +96,11 @@ nav ul {
 
 nav ul li {
   margin-right: 45px;
+}
 
+nav ul li:hover {
+  color: rgb(183, 231, 185);
+  cursor: pointer;
 }
 nav ul li:last-child {
   border-style: solid;
@@ -102,14 +110,16 @@ nav ul li:last-child {
   border-radius: 4px;
 }
 
-nav ul li a:link, a:visited {
+nav ul li a:link, nav ul li a:visited {
   color: #ffffff;
   text-align: center;
   display: inline-block;
 }
 
-a:hover, a:active {
-    background-color: #185d3a;
+nav ul a:hover {
+    background-color: rgb(24, 93, 58);
+    cursor: pointer;
+
 }
 
 div.nav-collapse {
@@ -125,7 +135,12 @@ div.links-container {
 }
 
 div.links-container ul li:first-child {
-  color: #55c66e
+  color: rgb(85, 198, 110)
+}
+
+div.links-container ul li:not(:first-child):hover {
+  color: rgb(40, 196, 252);
+  cursor: pointer;
 }
 
 div.links-collapse  {
@@ -138,11 +153,10 @@ footer  {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #000000;
+  background-color: rgb(0, 0, 0);
 }
 
 footer > a  {
-
   padding-left: 30px;
 }
 footer ul {
@@ -227,13 +241,19 @@ footer ul li {
   }
 
   div.links-collapse ul li {
+
     display: flex;
     justify-content: space-between;
-    border-bottom: solid #63b658;
+    border-bottom: solid rgb(99, 182, 88);
     background-color: rgba(0, 0, 0, 0.6);
     padding: 25px;
     text-align: center;
 
+
+  }
+  div.links-collapse ul li:hover  {
+    color: rgb(32, 87, 138);
+    cursor: pointer;
 
   }
 }
